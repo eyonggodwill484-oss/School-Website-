@@ -3,12 +3,14 @@ import './About.css'
 import about from '../../assets/about.png'
 import play from '../../assets/play-icon.png'
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const About = () => {
     const [playState, setPlayState] = useState(false);
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
 
     return (
-        <div className="about">
+        <div className={`about ${isVisible ? 'animate' : ''}`} ref={ref}>
             <div className="left">
                 <img src={about} alt="" className="about-img" />
                 <img src={play} alt="" className="play-icon" onClick={() => { setPlayState(true) }} />

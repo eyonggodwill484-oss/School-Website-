@@ -1,15 +1,15 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background:linear-gradient(rgba(8,0,58,0.7),
-    rgba(8,0,58,0.7)),
-    url('../../assets/hero.png');
-background-size: cover;
-background-position: center;
-color: white;
-display: flex;
-align-items:center ;
-justify-content: center;
+    background: linear-gradient(rgba(var(--primary-dark-rgb), 0.7), rgba(var(--primary-dark-rgb), 0.7)), url('../../assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    box-sizing: border-box;
 }
 
 .hero-txt{

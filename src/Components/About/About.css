@@ -9,6 +9,19 @@ width: 90%;
 .left{
 flex-basis: 40%;
 position: relative;
+opacity: 0;
+transform: translateX(-100px);
+transition: 1s;
+}
+.right{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+.about.animate .left,
+.about.animate .right{
+    opacity: 1;
+    transform: translateX(0);
 }
 .about-img{
 width: 100%;

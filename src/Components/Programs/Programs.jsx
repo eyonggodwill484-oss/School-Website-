@@ -14,28 +14,28 @@ const Programs = ()=>{
     return(
         <div className={`Programs ${isVisible ? 'animate' : ''}`} id="programs" ref={ref}>
 <div className="program">
-    <img src={programs_1} alt=""/>
+    <img src={programs_1} alt="Students during a lecture"/>
     <div className="caption">
-        <img src={program1} alt=""/>
+        <img src={program1} alt="Graduation icon"/>
         <p>Graduation Degree Program</p>
     </div>
     
 </div>
 
 <div className="program">
-    <img src={programs_2} alt=""/>
+    <img src={programs_2} alt="Students working on laptops"/>
     <div className="caption">
-        <img src={program2} alt=""/>
+        <img src={program2} alt="Master's degree icon"/>
         <p>Master Degree</p>
     </div>
      
 </div>
 
 <div className="program">
-    <img src={programs_3} alt=""/>
+    <img src={programs_3} alt="A student smiling in the library"/>
 
     <div className="caption">
-        <img src={program3} alt=""/>
+        <img src={program3} alt="Post-graduation icon"/>
         <p>Post Graduation</p>
     </div>
     

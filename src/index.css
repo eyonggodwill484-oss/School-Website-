@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #212EA0;
+  --primary-dark: #08003A;
+  --primary-dark-rgb: 8, 0, 58;
+  --background-light: #E7E3EB;
+  --text-light: #FFFFFF;
+  --text-dark: #333;
+  --text-gray: #676767;
+  --border-color: #797979;
+}
+
 *{
  margin:0;
  padding:0;

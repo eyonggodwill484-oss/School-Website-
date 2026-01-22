@@ -5,10 +5,12 @@ import gallery2 from '../../assets/gallery-2.png'
 import gallery3 from '../../assets/gallery-3.png'
 import gallery4 from '../../assets/gallery-4.png'
 import whitearrow from '../../assets/white-arrow.png'
+import useIntersectionObserver from "../../hooks/useIntersectionObserver"
 
 const Campus = () => {
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return (
-        <div className="campus">
+        <div className={`campus ${isVisible ? 'animate' : ''}`} ref={ref}>
             <div className="Gallery">
                 <img src={gallery1} alt="" />
                 <img src={gallery2} alt="" />
